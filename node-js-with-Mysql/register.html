@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Student Register</h1>
+    <form onsubmit="return subitForm()" method="post">
+        <input type="text" name="name" placeholder="Enter Name" required><br>
+        <input type="text" name="address" placeholder="Enter Address" required><br>
+        <input type="number" name="Phone_NO" placeholder="Enter Phone Number" required><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <!-- <script>
+        function subitForm() {
+
+            var name = document.getElementsByTagName("input")[0];
+            var address = document.getElementsByTagName("input")[1];
+            var PhoneNO = document.getElementsByTagName("input")[2];
+        }
+
+        var req = new XMLHttpRequest();
+        req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        req.send("name =" + name.value + "&address=" + address.value + "&PhoneNO=" + PhoneNO.value)
+
+        req.onreadystatechange = function () {
+            if (req.readyState == 4 && req.status == 200) {
+                alert(req.responseText)
+            }
+
+            nmae.value = "";
+            address.value = "";
+            PhoneNO.value = "";
+        }
+    </script> -->
+</body>
+
+</html>
